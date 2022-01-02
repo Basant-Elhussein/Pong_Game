@@ -3,14 +3,14 @@ Pong Game using a multiprocessing approach that enables two players to play agai
 Using an OOP design and pipe for processes communication, the game is divided into three main processes.
 
 - First the parent process:
-Runs the backend of the game by creating an instance of class Game. 
-Controls the ball and the paddles’ motion and the score’s calculation.
-Spawns two child processes.
+    - Runs the backend of the game by creating an instance of class Game. 
+    - Controls the ball and the paddles’ motion and the score’s calculation.
+    - Spawns two child processes.
 
 - Second 2 child processes:
---> Considered as the frontend or drawer of the program.
---> Sending the player's moves through the pipe to the backend.
---> Recieving the game state from the backend to be shown through the graphical interface.
+    - Considered as the frontend or drawer of the program.
+    - Sending the player's moves through the pipe to the backend.
+    - Recieving the game state from the backend to be shown through the graphical interface.
 
 How to run the game:
 - You need to have the final version of Python 3
